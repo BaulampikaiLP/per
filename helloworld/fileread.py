@@ -1,0 +1,5 @@
+file = open('D:\demo\sample.txt', 'a')
+file.write('\nto mavens i')
+file = open('D:\demo\sample.txt','r')
+print(file.read())
+file.close()
