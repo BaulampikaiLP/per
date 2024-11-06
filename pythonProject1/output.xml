@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.9 on win32)" generated="20241017 11:31:18.033" rpa="false" schemaversion="4">
+<suite id="s1" name="pythonProject1" source="C:\Users\baula\PycharmProjects\pythonProject1">
+<suite id="s1-s1" name="Resources" source="C:\Users\baula\PycharmProjects\pythonProject1\Resources">
+<suite id="s1-s1-s1" name="Desk" source="C:\Users\baula\PycharmProjects\pythonProject1\Resources\desk.robot">
+<test id="s1-s1-s1-t1" name="Open WPS Excel And Go To Sheets" line="11">
+<kw name="Run WPS Office">
+<kw name="Run Process" library="Process">
+<arg>${WPS_EXCEL_PATH}</arg>
+<arg>${WPS_ARGS}</arg>
+<doc>Runs a process and waits for it to complete.</doc>
+<msg timestamp="20241017 11:31:18.195" level="INFO">Starting process:
+"C:\Users\baula\AppData\Local\Kingsoft\WPS Office\12.2.0.18607\office6\wpsoffice.exe" "/prometheus /fromksolaunch /from=desktop_shortcut"</msg>
+<msg timestamp="20241017 11:31:18.252" level="INFO">Waiting for process to complete.</msg>
+<msg timestamp="20241017 11:31:18.288" level="INFO">Process completed.</msg>
+<status status="PASS" starttime="20241017 11:31:18.194" endtime="20241017 11:31:18.288"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20241017 11:31:23.289" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20241017 11:31:18.288" endtime="20241017 11:31:23.289"/>
+</kw>
+<status status="PASS" starttime="20241017 11:31:18.194" endtime="20241017 11:31:23.289"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20241017 11:31:28.290" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20241017 11:31:23.290" endtime="20241017 11:31:28.290"/>
+</kw>
+<status status="PASS" starttime="20241017 11:31:18.192" endtime="20241017 11:31:28.291"/>
+</test>
+<status status="PASS" starttime="20241017 11:31:18.115" endtime="20241017 11:31:28.292"/>
+</suite>
+<status status="PASS" starttime="20241017 11:31:18.106" endtime="20241017 11:31:28.295"/>
+</suite>
+<status status="PASS" starttime="20241017 11:31:18.039" endtime="20241017 11:31:28.297"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="pythonProject1">pythonProject1</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Resources">pythonProject1.Resources</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Desk">pythonProject1.Resources.Desk</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20241017 11:31:18.182" level="ERROR">Error in file 'C:\Users\baula\PycharmProjects\pythonProject1\Resources\desk.robot' on line 2: Initializing library 'AutoItLibrary' with no arguments failed: com_error: (-2147221164, 'Class not registered', None, None)
+Traceback (most recent call last):
+  File "C:\Users\baula\PycharmProjects\pythonProject1\.venv\Lib\site-packages\win32com\client\dynamic.py", line 84, in _GetGoodDispatch
+    IDispatch = pythoncom.connect(IDispatch)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pywintypes.com_error: (-2147221021, 'Operation unavailable', None, None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\baula\PycharmProjects\pythonProject1\.venv\Lib\site-packages\AutoItLibrary\__init__.py", line 79, in __init__
+    self._AutoIt = win32com.client.Dispatch("AutoItX3.Control")
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\baula\PycharmProjects\pythonProject1\.venv\Lib\site-packages\win32com\client\__init__.py", line 118, in Dispatch
+    dispatch, userName = dynamic._GetGoodDispatchAndUserName(dispatch, userName, clsctx)
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\baula\PycharmProjects\pythonProject1\.venv\Lib\site-packages\win32com\client\dynamic.py", line 104, in _GetGoodDispatchAndUserName
+    return (_GetGoodDispatch(IDispatch, clsctx), userName)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\baula\PycharmProjects\pythonProject1\.venv\Lib\site-packages\win32com\client\dynamic.py", line 86, in _GetGoodDispatch
+    IDispatch = pythoncom.CoCreateInstance(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pywintypes.com_error: (-2147221164, 'Class not registered', None, None)</msg>
+</errors>
+</robot>

@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.11.9 on win32)" generated="2024-10-21T16:29:35.530187" rpa="false" schemaversion="5">
+<suite id="s1" name="Orange" source="C:\Users\baula\PycharmProjects\orange">
+<suite id="s1-s1" name="Resources" source="C:\Users\baula\PycharmProjects\orange\Resources">
+<suite id="s1-s1-s1" name="Sam" source="C:\Users\baula\PycharmProjects\orange\Resources\sam.robot">
+<test id="s1-s1-s1-t1" name="Open WPS Excel And Go To Sheets" line="10">
+<kw name="Run WPS Office">
+<kw name="Run" owner="AutoItLibrary">
+<msg time="2024-10-21T16:29:35.739494" level="INFO">AutoItLibrary.Run(FileName='C:\Users\baula\AppData\Local\Kingsoft\WPS Office\ksolaunch.exe', WorkingDir='', Flag='')</msg>
+<arg>${WPS_EXCEL_PATH}</arg>
+<doc>Direct wrapper for AutoIt's Run method.</doc>
+<status status="PASS" start="2024-10-21T16:29:35.689093" elapsed="0.050401"/>
+</kw>
+<doc>Runs WPS Office executable with arguments</doc>
+<status status="PASS" start="2024-10-21T16:29:35.687610" elapsed="0.051884"/>
+</kw>
+<kw name="Excel Sheets">
+<kw name="Win Wait Active" owner="AutoItLibrary">
+<msg time="2024-10-21T16:29:36.698193" level="INFO">AutoItLibrary.WinWaitActive(WindowTitle='WPS Office', WindowText='', TimeOut=60)</msg>
+<arg>WPS Office</arg>
+<doc>Direct wrapper for AutoIt's WinWaitActive method.</doc>
+<status status="PASS" start="2024-10-21T16:29:35.740500" elapsed="0.957693"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-21T16:29:38.698612" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-21T16:29:36.698193" elapsed="2.000419"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>^n</arg>
+<doc>method Send</doc>
+<status status="PASS" start="2024-10-21T16:29:38.699124" elapsed="0.023784"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-21T16:29:39.723018" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-21T16:29:38.722908" elapsed="1.000110"/>
+</kw>
+<kw name="Mouse Click" owner="AutoItLibrary">
+<arg>left</arg>
+<arg>132</arg>
+<arg>313</arg>
+<doc>method MouseClick</doc>
+<status status="PASS" start="2024-10-21T16:29:39.723018" elapsed="0.642048"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-21T16:29:41.365636" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-21T16:29:40.365066" elapsed="1.000570"/>
+</kw>
+<kw name="Mouse Click" owner="AutoItLibrary">
+<arg>left</arg>
+<arg>382</arg>
+<arg>236</arg>
+<doc>method MouseClick</doc>
+<status status="PASS" start="2024-10-21T16:29:41.365636" elapsed="0.493815"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-21T16:29:42.860897" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-21T16:29:41.859451" elapsed="1.001446"/>
+</kw>
+<kw name="Mouse Click" owner="AutoItLibrary">
+<arg>left</arg>
+<arg>118</arg>
+<arg>242</arg>
+<doc>method MouseClick</doc>
+<status status="PASS" start="2024-10-21T16:29:42.860897" elapsed="0.513937"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-21T16:29:44.376484" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-21T16:29:43.374834" elapsed="1.001650"/>
+</kw>
+<doc>Clicks on the Sheets option in WPS Office</doc>
+<status status="PASS" start="2024-10-21T16:29:35.740500" elapsed="8.635984"/>
+</kw>
+<kw name="Add Details">
+<kw name="Send" owner="AutoItLibrary">
+<arg>S.No</arg>
+<doc>method Send</doc>
+<status status="PASS" start="2024-10-21T16:29:44.377998" elapsed="0.068789"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-21T16:29:45.447266" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-21T16:29:44.446787" elapsed="1.000479"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>{RIGHT}</arg>
+<doc>method Send</doc>
+<status status="PASS" start="2024-10-21T16:29:45.447266" elapsed="0.012239"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-21T16:29:45.959637" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-21T16:29:45.459505" elapsed="0.500132"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>Name</arg>
+<doc>method Send</doc>
+<status status="PASS" start="2024-10-21T16:29:45.959637" elapsed="0.057345"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-21T16:29:46.517098" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-21T16:29:46.016982" elapsed="0.500116"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>{RIGHT}</arg>
+<doc>method Send</doc>
+<status status="PASS" start="2024-10-21T16:29:46.517098" elapsed="0.013117"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-21T16:29:47.030304" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-21T16:29:46.530215" elapsed="0.500089"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>Position</arg>
+<doc>method Send</doc>
+<status status="PASS" start="2024-10-21T16:29:47.030304" elapsed="0.100756"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-10-21T16:29:47.632293" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-10-21T16:29:47.132061" elapsed="0.500232"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>{ENTER}</arg>
+<doc>method Send</doc>
+<status status="PASS" start="2024-10-21T16:29:47.632293" elapsed="0.011547"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="FAIL" start="2024-10-21T16:29:47.643840" elapsed="0.505912">Execution terminated by signal</status>
+</kw>
+<kw name="Mouse Click" owner="AutoItLibrary">
+<arg>left</arg>
+<arg>108</arg>
+<arg>262</arg>
+<doc>method MouseClick</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.149752" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>1</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.151058" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.151058" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>{RIGHT}</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.151058" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.151058" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>Sundar</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.151058" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.151058" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>{RIGHT}</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.151058" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.151058" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>TL</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.151058" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.151058" elapsed="0.000000"/>
+</kw>
+<kw name="Mouse Click" owner="AutoItLibrary">
+<arg>left</arg>
+<arg>127</arg>
+<arg>281</arg>
+<doc>method MouseClick</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.151058" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>2</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.151058" elapsed="0.001033"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.152091" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>{RIGHT}</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.152091" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.152091" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>Harshini</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.152091" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.152091" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>{RIGHT}</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.152091" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.152091" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>SQA</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.152091" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.152091" elapsed="0.000000"/>
+</kw>
+<kw name="Mouse Click" owner="AutoItLibrary">
+<arg>left</arg>
+<arg>128</arg>
+<arg>299</arg>
+<doc>method MouseClick</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.152091" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>3</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.152091" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.152091" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>{RIGHT}</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.152091" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.152091" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>Reshma Banu</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.152091" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.152091" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>{RIGHT}</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.152091" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.152091" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>SQA</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.152091" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.152091" elapsed="0.000000"/>
+</kw>
+<kw name="Mouse Click" owner="AutoItLibrary">
+<arg>left</arg>
+<arg>122</arg>
+<arg>316</arg>
+<doc>method MouseClick</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.153506" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>4</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.153506" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.153506" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>{RIGHT}</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.153506" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.153506" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>Senthil</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.153506" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.153506" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>{RIGHT}</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.153506" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.153506" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>QA</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.153506" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.153506" elapsed="0.000000"/>
+</kw>
+<kw name="Mouse Click" owner="AutoItLibrary">
+<arg>left</arg>
+<arg>131</arg>
+<arg>342</arg>
+<doc>method MouseClick</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.153506" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>5</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.153506" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.153506" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>{RIGHT}</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.154732" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.154732" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>Baulampikai</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.154732" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.154732" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>{RIGHT}</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.154732" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.154732" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>QA</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.154732" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.155243" elapsed="0.000000"/>
+</kw>
+<kw name="Mouse Click" owner="AutoItLibrary">
+<arg>left</arg>
+<arg>130</arg>
+<arg>357</arg>
+<doc>method MouseClick</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.155243" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>6</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.155243" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.155243" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>{RIGHT}</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.155243" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.155243" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>Praveen</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.155243" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.155243" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>{RIGHT}</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.155243" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>0.5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.155243" elapsed="0.000000"/>
+</kw>
+<kw name="Send" owner="AutoItLibrary">
+<arg>QA</arg>
+<doc>method Send</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.155243" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-10-21T16:29:48.155243" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-10-21T16:29:44.377998" elapsed="3.778716">Execution terminated by signal</status>
+</kw>
+<kw name="Copy Data">
+<status status="NOT RUN" start="2024-10-21T16:29:48.156714" elapsed="0.000000"/>
+</kw>
+<kw name="Open Word">
+<status status="NOT RUN" start="2024-10-21T16:29:48.156714" elapsed="0.000000"/>
+</kw>
+<kw name="Save File">
+<status status="NOT RUN" start="2024-10-21T16:29:48.157762" elapsed="0.000000"/>
+</kw>
+<doc>Opens WPS Office and navigates to the Sheets section.</doc>
+<status status="FAIL" start="2024-10-21T16:29:35.687610" elapsed="12.470152">Execution terminated by signal</status>
+</test>
+<status status="FAIL" start="2024-10-21T16:29:35.571008" elapsed="12.587754"/>
+</suite>
+<status status="FAIL" start="2024-10-21T16:29:35.568653" elapsed="12.591084"/>
+</suite>
+<status status="FAIL" start="2024-10-21T16:29:35.532675" elapsed="12.629055"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Orange">Orange</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Resources">Orange.Resources</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Sam">Orange.Resources.Sam</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
